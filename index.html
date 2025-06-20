@@ -46,7 +46,7 @@
   <section class="projects">
     <h2>Projects</h2>
     <ul>
-      <li><a href="https://github.com/alabiibrahim/Road-accident-report/" target="_blank">SQL To Power BI- Road Accident Report</a></li>
+      <li><a href="https://alabiibrahim.github.io/Road-accident-report/" target="_blank">SQL To Power BI- Road Accident Report</a></li>
       <li><a href="https://alabiibrahim.github.io/Sales-Performance-Analysis/" target="_blank">Excel Sales Performance Analysis</a></li>
       <li><a href="https://alabiibrahim.github.io/Pizza-sales-report/" target="_blank">SQL Pizza Sales Report</a></li>
       <li><a href="https://alabiibrahim.github.io/Marketing-Campaign-Performance-Analysis/" target="_blank">SQL Marketing Camapign Performance</a></li>
@@ -55,13 +55,36 @@
 
   <section class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">alabi0147@gmail.com</a></p>
+    <p>Email: <a href="alabi0147@gmail.com">alabi0147@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/your-link" target="_blank">linkedin.com/in/your-link</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Alabi Ibrahim. Powered by GitHub Pages.</p>
   </footer>
+ 
+  <script>
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Excel', 'SQL', 'Power BI', 'Tableau'],
+        datasets: [{
+          label: 'Skill Level',
+          data: [85, 80, 80, 75],
+          backgroundColor: ['#3498db', '#2ecc71', '#e67e22', '#9b59b6'],
+          borderColor: '#ffffff',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
 
